@@ -56,7 +56,7 @@ Classboard는 필요한 정보의 양에 따라 세 가지 크기의 위젯을 �
 </p>
 
 
-## 참고
+## Reference
  Mac에서 위젯 추가 및 사용자화하기
 https://support.apple.com/ko-kr/guide/mac-help/mchl52be5da5/mac
 
