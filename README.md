@@ -54,8 +54,8 @@ Classboard는 필요한 정보의 양에 따라 세 가지 크기의 위젯을 �
 
 ### Large 주간 시간표 — 월요일부터 금요일까지 전체 수업을 시간표 형태로 확인
 <p align="center">
-  <img src="Source/light/Screenshot 2026-08-21 at 07.41.51.png" width="450">
-  <img src="Source/widgetL.png" width="450">
+  <img src="Source/light/Screenshot 2026-08-21 at 07.41.51.png" width="430">
+  <img src="Source/widgetL.png" width="430">
 </p>
 
 
