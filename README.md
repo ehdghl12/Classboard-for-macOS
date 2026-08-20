@@ -9,7 +9,7 @@ macOS 위젯에서 강의 시간표를 확인하고 관리해보세요.
 설정 앱에서 강의 시간표를 직접 수정한뒤, Small / Medium / Large 3가지 크기의 위젯으로 확인해보세요.
 
 👉 **Latest Version**
-https://github.com/ehdghl12/yourdisk-for-macOS/releases/latest/download/yourdisk.dmg
+https://github.com/ehdghl12/yourdisk-for-macOS/releases/latest/download/Classboard.dmg
 
 
 ## 설정 앱
