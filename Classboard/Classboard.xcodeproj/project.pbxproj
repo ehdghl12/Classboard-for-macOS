@@ -1,0 +1,856 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00076AE0A8E7415263E4C9D5 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED652738104774A91CA23283 /* Course.swift */; };
+		068C5689D6EEE7B2983A1A0F /* SmallTimetableWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F8E1DF369B010241E1C1A /* SmallTimetableWidgetView.swift */; };
+		09A55AD17B3DF4102989C3E0 /* LargeTimetableWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D6CF645259C80D6AC40281 /* LargeTimetableWidgetView.swift */; };
+		11DC7D6C57D202126417B6D9 /* ScheduledClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6388DFF99303837D732F76B4 /* ScheduledClass.swift */; };
+		C73F2E9A0D6B4C18A5913F20 /* TimetableLayoutCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D4A6F8C1E34B9D8A7C0E12 /* TimetableLayoutCalculator.swift */; };
+		D84A3F0B1C7D4E29B6825A31 /* TimetableLayoutCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D4A6F8C1E34B9D8A7C0E12 /* TimetableLayoutCalculator.swift */; };
+		2607A0255CA52CFAC1D08662 /* TimetableTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A2314665318177595E3AAD /* TimetableTimelineProvider.swift */; };
+		2B20EE8D009CCA4A34A156BE /* DateTimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEE5A9CA7B69BE9173332BE /* DateTimeHelper.swift */; };
+		2B8C9C2965D95C77E362C1B1 /* ScheduleDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A7F9704C7120F646DBBB2E /* ScheduleDraft.swift */; };
+		38A5FF65E2CD88EB4298A776 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD613F1267937628E7E25D /* AppConfiguration.swift */; };
+		3CEF12FCD9F4D7C410D8AE15 /* TimetableSnapshotStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630187F1348CD42E62962DE5 /* TimetableSnapshotStore.swift */; };
+		41283FF3D681EA4AD60E026D /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732EDA8612B0521EE2DF4C02 /* Weekday.swift */; };
+		496FDAF29C7E9A7CF44C27ED /* ScheduleRowEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34479F8CD4AE1F59B57843C4 /* ScheduleRowEditor.swift */; };
+		50CF347E425C4B66B6B3E1FA /* TimeOfDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2456DD3C04DF45A0C50DE /* TimeOfDay.swift */; };
+		62E92CB4266D07BEE6443BCC /* CourseSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4377A1351E134CAC0CB890B4 /* CourseSnapshot.swift */; };
+		6CD1A8A2DE04658684E784DF /* ScheduleCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABCA6F0A3FE8D8CF7591E4F /* ScheduleCalculator.swift */; };
+		737F8DEC2EF7F543176061C8 /* TimeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCCBC807A94EABB83C3791A /* TimeLabel.swift */; };
+		85E7B4BE9D21AC21B27C2A46 /* WidgetSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0197BFBE33D25659E72E007 /* WidgetSyncService.swift */; };
+		92CD1A271ABA98CB3A4DCB7E /* MediumTimetableWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237786C5F02E0FC5754E64D /* MediumTimetableWidgetView.swift */; };
+		95B2A8F01160E20353AFBBAD /* ScheduleCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABCA6F0A3FE8D8CF7591E4F /* ScheduleCalculator.swift */; };
+		98B234085B42759A70C95B23 /* TimetableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FA7D3EA21D3D2747018567 /* TimetableService.swift */; };
+		996240240EFB2A66FB621C11 /* DateTimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEE5A9CA7B69BE9173332BE /* DateTimeHelper.swift */; };
+		9B3C21DFE2DEE6685CDAA615 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644AC93F462469D894F897FE /* ColorHelper.swift */; };
+		A13816901460B1D871203022 /* ClassSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B6290DF818ECD1736ACC4C /* ClassSchedule.swift */; };
+		A4228B3C19E03C94025A62AE /* ClassboardWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A22D076E92910747D3E65DE /* ClassboardWidget.swift */; };
+		A6BA10A7504E4B928D7079B5 /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732EDA8612B0521EE2DF4C02 /* Weekday.swift */; };
+		AA475080A3D201BC9CE37301 /* ClassboardWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A4303B5A02B7A13334775AA /* ClassboardWidgetExtension.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD73A4AB379126B0C699273A /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D10804F25DBE7D87EC953FC /* PersistenceController.swift */; };
+		AE49CB229FD6D249E607A295 /* CourseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F80DAC733B998FE13B392 /* CourseCard.swift */; };
+		B3FF63A4954C12DB7E21A1F2 /* WidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9C7EF3C817DEB0F1FEA557 /* WidgetEntry.swift */; };
+		B9BFC82F8A248BF23465EC9B /* WeeklyTimetableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5205B0D878131B2EBE7CD6 /* WeeklyTimetableView.swift */; };
+		BFE0418F3447BA52D79398F5 /* CourseEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482F9668E4778F4D9518D056 /* CourseEditorView.swift */; };
+		C1339C59AC5FF0977665A2DA /* ClassboardWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1AFB73598A7B2C7CFE08D5 /* ClassboardWidgetBundle.swift */; };
+		C3B3E12E3C98A980CE2EC166 /* WidgetEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0382694CF98102788BF5545 /* WidgetEmptyStateView.swift */; };
+		CD775E3C6117AC5993EE655E /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5047D48815C218B4DEB8EB66 /* EmptyStateView.swift */; };
+		D45312E808C5041FED693D88 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644AC93F462469D894F897FE /* ColorHelper.swift */; };
+		D8F409FFFB1B7C056E8FF354 /* TimetableSnapshotStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630187F1348CD42E62962DE5 /* TimetableSnapshotStore.swift */; };
+		D9E0616F8E34753F63640C38 /* TimeOfDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2456DD3C04DF45A0C50DE /* TimeOfDay.swift */; };
+		E28A1DE5FFCB1C4F9142904D /* CourseSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4377A1351E134CAC0CB890B4 /* CourseSnapshot.swift */; };
+		E9BC09D90A2502E6CAEBC280 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE146DC0751C8604A9F604 /* RootView.swift */; };
+		ED474910BDC2D001B9A44D9E /* ClassboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218784A066952EE51D886FB5 /* ClassboardApp.swift */; };
+		EE53A62AFF4B463345BF536F /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD613F1267937628E7E25D /* AppConfiguration.swift */; };
+		F5DD149582ABF2524B7ACEFD /* ScheduledClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6388DFF99303837D732F76B4 /* ScheduledClass.swift */; };
+		F6C3041C1680E018746CB64E /* ScheduleCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22081BDF7DEDF7B2C2A25258 /* ScheduleCalculatorTests.swift */; };
+		F7B10ABCCFC85B1486778D97 /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF774122C07F858987B5AB6B /* CourseListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B08FC46ECE5A991DCA2E8F50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C981970453DA16AE502E919F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E9BFF149D94C7C29A29F73D;
+			remoteInfo = ClassboardWidgetExtension;
+		};
+		F9B1326DFC287D15EB97FEF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C981970453DA16AE502E919F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 698EE99B03441E1860942179;
+			remoteInfo = Classboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		354DE1AFDDAA7FBB961D5290 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AA475080A3D201BC9CE37301 /* ClassboardWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0775779D2FBF5FC00701570F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		218784A066952EE51D886FB5 /* ClassboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassboardApp.swift; sourceTree = "<group>"; };
+		22081BDF7DEDF7B2C2A25258 /* ScheduleCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCalculatorTests.swift; sourceTree = "<group>"; };
+		2A7F8E1DF369B010241E1C1A /* SmallTimetableWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallTimetableWidgetView.swift; sourceTree = "<group>"; };
+		2F58BD7CC0A50D1FD62C6AE8 /* ClassboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34479F8CD4AE1F59B57843C4 /* ScheduleRowEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRowEditor.swift; sourceTree = "<group>"; };
+		3A4303B5A02B7A13334775AA /* ClassboardWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ClassboardWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C1AFB73598A7B2C7CFE08D5 /* ClassboardWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassboardWidgetBundle.swift; sourceTree = "<group>"; };
+		4377A1351E134CAC0CB890B4 /* CourseSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSnapshot.swift; sourceTree = "<group>"; };
+		43C2456DD3C04DF45A0C50DE /* TimeOfDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOfDay.swift; sourceTree = "<group>"; };
+		482F9668E4778F4D9518D056 /* CourseEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseEditorView.swift; sourceTree = "<group>"; };
+		4CEE5A9CA7B69BE9173332BE /* DateTimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeHelper.swift; sourceTree = "<group>"; };
+		4EDD7DCE3DB663CF5FD8F8AA /* ClassboardWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClassboardWidget.entitlements; sourceTree = "<group>"; };
+		5047D48815C218B4DEB8EB66 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		588E6F292CCAF6C2666FE745 /* Classboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Classboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62FE146DC0751C8604A9F604 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		630187F1348CD42E62962DE5 /* TimetableSnapshotStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableSnapshotStore.swift; sourceTree = "<group>"; };
+		6388DFF99303837D732F76B4 /* ScheduledClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledClass.swift; sourceTree = "<group>"; };
+		644AC93F462469D894F897FE /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
+		6A22D076E92910747D3E65DE /* ClassboardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassboardWidget.swift; sourceTree = "<group>"; };
+		732EDA8612B0521EE2DF4C02 /* Weekday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weekday.swift; sourceTree = "<group>"; };
+		7D10804F25DBE7D87EC953FC /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		7FCCBC807A94EABB83C3791A /* TimeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLabel.swift; sourceTree = "<group>"; };
+		820D0F25C17242A34AD2C104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C3560D7E12FFADD94EC2351 /* Classboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Classboard.entitlements; sourceTree = "<group>"; };
+		96D6CF645259C80D6AC40281 /* LargeTimetableWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTimetableWidgetView.swift; sourceTree = "<group>"; };
+		A237786C5F02E0FC5754E64D /* MediumTimetableWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumTimetableWidgetView.swift; sourceTree = "<group>"; };
+		A8A2314665318177595E3AAD /* TimetableTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableTimelineProvider.swift; sourceTree = "<group>"; };
+		B0197BFBE33D25659E72E007 /* WidgetSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSyncService.swift; sourceTree = "<group>"; };
+		B2D4A6F8C1E34B9D8A7C0E12 /* TimetableLayoutCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableLayoutCalculator.swift; sourceTree = "<group>"; };
+		C64F80DAC733B998FE13B392 /* CourseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCard.swift; sourceTree = "<group>"; };
+		CB9C7EF3C817DEB0F1FEA557 /* WidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntry.swift; sourceTree = "<group>"; };
+		CD239938D1BDC56B787ACFB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF774122C07F858987B5AB6B /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
+		D0FA7D3EA21D3D2747018567 /* TimetableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableService.swift; sourceTree = "<group>"; };
+		D5B6290DF818ECD1736ACC4C /* ClassSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSchedule.swift; sourceTree = "<group>"; };
+		EABCA6F0A3FE8D8CF7591E4F /* ScheduleCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCalculator.swift; sourceTree = "<group>"; };
+		EBCD613F1267937628E7E25D /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		ED652738104774A91CA23283 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		F0382694CF98102788BF5545 /* WidgetEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEmptyStateView.swift; sourceTree = "<group>"; };
+		F4A7F9704C7120F646DBBB2E /* ScheduleDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDraft.swift; sourceTree = "<group>"; };
+		FE5205B0D878131B2EBE7CD6 /* WeeklyTimetableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyTimetableView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C86C06E737A2123D76E2FABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B208DB47DA230159E08E40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F001BC2AF9EB5498B3360756 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C0AC979126B806D4FAEEDF6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7D10804F25DBE7D87EC953FC /* PersistenceController.swift */,
+				B0197BFBE33D25659E72E007 /* WidgetSyncService.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2F50BA2A462517509D8018D3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				644AC93F462469D894F897FE /* ColorHelper.swift */,
+				4CEE5A9CA7B69BE9173332BE /* DateTimeHelper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		33B3BD90D260E5D354C91526 /* ClassboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				820D0F25C17242A34AD2C104 /* Info.plist */,
+				22081BDF7DEDF7B2C2A25258 /* ScheduleCalculatorTests.swift */,
+			);
+			path = ClassboardTests;
+			sourceTree = "<group>";
+		};
+		4AC082E59D39BE6E36C4A7AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E40372AB0AA6E8AACCEE303 /* Timetable */,
+				BEC822A9D3F529AE7217631C /* Courses */,
+				62FE146DC0751C8604A9F604 /* RootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5151B46607EBC8890D8DFCC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				588E6F292CCAF6C2666FE745 /* Classboard.app */,
+				3A4303B5A02B7A13334775AA /* ClassboardWidgetExtension.appex */,
+				2F58BD7CC0A50D1FD62C6AE8 /* ClassboardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E40372AB0AA6E8AACCEE303 /* Timetable */ = {
+			isa = PBXGroup;
+			children = (
+				FE5205B0D878131B2EBE7CD6 /* WeeklyTimetableView.swift */,
+			);
+			path = Timetable;
+			sourceTree = "<group>";
+		};
+		63006764407566408125B116 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EABCA6F0A3FE8D8CF7591E4F /* ScheduleCalculator.swift */,
+				D0FA7D3EA21D3D2747018567 /* TimetableService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		667D8180279A02071974C7F9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CD239938D1BDC56B787ACFB4 /* Info.plist */,
+				218784A066952EE51D886FB5 /* ClassboardApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A5DEF1114BB40571B839806C /* ClassboardWidget */ = {
+			isa = PBXGroup;
+			children = (
+				0775779D2FBF5FC00701570F /* Info.plist */,
+				4EDD7DCE3DB663CF5FD8F8AA /* ClassboardWidget.entitlements */,
+				CB9C7EF3C817DEB0F1FEA557 /* WidgetEntry.swift */,
+				A8A2314665318177595E3AAD /* TimetableTimelineProvider.swift */,
+				3C1AFB73598A7B2C7CFE08D5 /* ClassboardWidgetBundle.swift */,
+				6A22D076E92910747D3E65DE /* ClassboardWidget.swift */,
+				2A7F8E1DF369B010241E1C1A /* SmallTimetableWidgetView.swift */,
+				A237786C5F02E0FC5754E64D /* MediumTimetableWidgetView.swift */,
+				96D6CF645259C80D6AC40281 /* LargeTimetableWidgetView.swift */,
+				F0382694CF98102788BF5545 /* WidgetEmptyStateView.swift */,
+			);
+			path = ClassboardWidget;
+			sourceTree = "<group>";
+		};
+		AB928FE4249251548F2F9D4E /* Classboard */ = {
+			isa = PBXGroup;
+			children = (
+				667D8180279A02071974C7F9 /* App */,
+				CDC18D906C769E5EB125D37F /* Models */,
+				1C0AC979126B806D4FAEEDF6 /* Data */,
+				63006764407566408125B116 /* Services */,
+				E54081FF5D7362DB0CCF2479 /* Shared */,
+				2F50BA2A462517509D8018D3 /* Utilities */,
+				4AC082E59D39BE6E36C4A7AC /* Views */,
+				F689BA217B1EF653330DE280 /* Components */,
+				8C3560D7E12FFADD94EC2351 /* Classboard.entitlements */,
+			);
+			path = Classboard;
+			sourceTree = "<group>";
+		};
+		ADCF10F76EBF2A74473E9DC4 = {
+			isa = PBXGroup;
+			children = (
+				AB928FE4249251548F2F9D4E /* Classboard */,
+				A5DEF1114BB40571B839806C /* ClassboardWidget */,
+				33B3BD90D260E5D354C91526 /* ClassboardTests */,
+				5151B46607EBC8890D8DFCC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEC822A9D3F529AE7217631C /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				F4A7F9704C7120F646DBBB2E /* ScheduleDraft.swift */,
+				34479F8CD4AE1F59B57843C4 /* ScheduleRowEditor.swift */,
+				482F9668E4778F4D9518D056 /* CourseEditorView.swift */,
+				CF774122C07F858987B5AB6B /* CourseListView.swift */,
+			);
+			path = Courses;
+			sourceTree = "<group>";
+		};
+		CDC18D906C769E5EB125D37F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED652738104774A91CA23283 /* Course.swift */,
+				D5B6290DF818ECD1736ACC4C /* ClassSchedule.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E54081FF5D7362DB0CCF2479 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EBCD613F1267937628E7E25D /* AppConfiguration.swift */,
+				732EDA8612B0521EE2DF4C02 /* Weekday.swift */,
+				43C2456DD3C04DF45A0C50DE /* TimeOfDay.swift */,
+				4377A1351E134CAC0CB890B4 /* CourseSnapshot.swift */,
+				6388DFF99303837D732F76B4 /* ScheduledClass.swift */,
+				B2D4A6F8C1E34B9D8A7C0E12 /* TimetableLayoutCalculator.swift */,
+				630187F1348CD42E62962DE5 /* TimetableSnapshotStore.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F689BA217B1EF653330DE280 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C64F80DAC733B998FE13B392 /* CourseCard.swift */,
+				7FCCBC807A94EABB83C3791A /* TimeLabel.swift */,
+				5047D48815C218B4DEB8EB66 /* EmptyStateView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E9BFF149D94C7C29A29F73D /* ClassboardWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A19750D6EF30D6D0F172EF3E /* Build configuration list for PBXNativeTarget "ClassboardWidgetExtension" */;
+			buildPhases = (
+				85B53C7A615CCE39E04693F3 /* Sources */,
+				C86C06E737A2123D76E2FABB /* Frameworks */,
+				A0AD9CEC41780F670929E69C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClassboardWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = ClassboardWidgetExtension;
+			productReference = 3A4303B5A02B7A13334775AA /* ClassboardWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		698EE99B03441E1860942179 /* Classboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F8B995C0985FBB9D2A49B8F /* Build configuration list for PBXNativeTarget "Classboard" */;
+			buildPhases = (
+				8682261519D15BD64A9E5D31 /* Sources */,
+				F001BC2AF9EB5498B3360756 /* Frameworks */,
+				E28FAD8F60ECDED9B4AD087A /* Resources */,
+				354DE1AFDDAA7FBB961D5290 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86ECC82404AC7ADBF8317F45 /* PBXTargetDependency */,
+			);
+			name = Classboard;
+			packageProductDependencies = (
+			);
+			productName = Classboard;
+			productReference = 588E6F292CCAF6C2666FE745 /* Classboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3017CE8681086B46C97818B /* ClassboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C93868262602C38CCE5570C3 /* Build configuration list for PBXNativeTarget "ClassboardTests" */;
+			buildPhases = (
+				29BEEA3D856852A8CC3247ED /* Sources */,
+				D6B208DB47DA230159E08E40 /* Frameworks */,
+				96B4702EF39C73C4DCF44E6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B57660E4BEB73D5292856B6A /* PBXTargetDependency */,
+			);
+			name = ClassboardTests;
+			packageProductDependencies = (
+			);
+			productName = ClassboardTests;
+			productReference = 2F58BD7CC0A50D1FD62C6AE8 /* ClassboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C981970453DA16AE502E919F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					4E9BFF149D94C7C29A29F73D = {
+						CreatedOnToolsVersion = 26.6;
+						LastSwiftMigration = 2660;
+						ProvisioningStyle = Automatic;
+					};
+					698EE99B03441E1860942179 = {
+						CreatedOnToolsVersion = 26.6;
+						LastSwiftMigration = 2660;
+						ProvisioningStyle = Automatic;
+					};
+					F3017CE8681086B46C97818B = {
+						CreatedOnToolsVersion = 26.6;
+						LastSwiftMigration = 2660;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 698EE99B03441E1860942179;
+					};
+				};
+			};
+			buildConfigurationList = 12D04D787E90C9B967248BFD /* Build configuration list for PBXProject "Classboard" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ko,
+			);
+			mainGroup = ADCF10F76EBF2A74473E9DC4;
+			minimizedProjectReferenceProxies = 1;
+			productRefGroup = 5151B46607EBC8890D8DFCC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				698EE99B03441E1860942179 /* Classboard */,
+				4E9BFF149D94C7C29A29F73D /* ClassboardWidgetExtension */,
+				F3017CE8681086B46C97818B /* ClassboardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96B4702EF39C73C4DCF44E6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0AD9CEC41780F670929E69C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28FAD8F60ECDED9B4AD087A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29BEEA3D856852A8CC3247ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C3041C1680E018746CB64E /* ScheduleCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85B53C7A615CCE39E04693F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38A5FF65E2CD88EB4298A776 /* AppConfiguration.swift in Sources */,
+				41283FF3D681EA4AD60E026D /* Weekday.swift in Sources */,
+				50CF347E425C4B66B6B3E1FA /* TimeOfDay.swift in Sources */,
+				E28A1DE5FFCB1C4F9142904D /* CourseSnapshot.swift in Sources */,
+				11DC7D6C57D202126417B6D9 /* ScheduledClass.swift in Sources */,
+				D84A3F0B1C7D4E29B6825A31 /* TimetableLayoutCalculator.swift in Sources */,
+				3CEF12FCD9F4D7C410D8AE15 /* TimetableSnapshotStore.swift in Sources */,
+				6CD1A8A2DE04658684E784DF /* ScheduleCalculator.swift in Sources */,
+				D45312E808C5041FED693D88 /* ColorHelper.swift in Sources */,
+				2B20EE8D009CCA4A34A156BE /* DateTimeHelper.swift in Sources */,
+				B3FF63A4954C12DB7E21A1F2 /* WidgetEntry.swift in Sources */,
+				2607A0255CA52CFAC1D08662 /* TimetableTimelineProvider.swift in Sources */,
+				C1339C59AC5FF0977665A2DA /* ClassboardWidgetBundle.swift in Sources */,
+				A4228B3C19E03C94025A62AE /* ClassboardWidget.swift in Sources */,
+				068C5689D6EEE7B2983A1A0F /* SmallTimetableWidgetView.swift in Sources */,
+				92CD1A271ABA98CB3A4DCB7E /* MediumTimetableWidgetView.swift in Sources */,
+				09A55AD17B3DF4102989C3E0 /* LargeTimetableWidgetView.swift in Sources */,
+				C3B3E12E3C98A980CE2EC166 /* WidgetEmptyStateView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8682261519D15BD64A9E5D31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED474910BDC2D001B9A44D9E /* ClassboardApp.swift in Sources */,
+				00076AE0A8E7415263E4C9D5 /* Course.swift in Sources */,
+				A13816901460B1D871203022 /* ClassSchedule.swift in Sources */,
+				AD73A4AB379126B0C699273A /* PersistenceController.swift in Sources */,
+				85E7B4BE9D21AC21B27C2A46 /* WidgetSyncService.swift in Sources */,
+				95B2A8F01160E20353AFBBAD /* ScheduleCalculator.swift in Sources */,
+				98B234085B42759A70C95B23 /* TimetableService.swift in Sources */,
+				EE53A62AFF4B463345BF536F /* AppConfiguration.swift in Sources */,
+				A6BA10A7504E4B928D7079B5 /* Weekday.swift in Sources */,
+				D9E0616F8E34753F63640C38 /* TimeOfDay.swift in Sources */,
+				62E92CB4266D07BEE6443BCC /* CourseSnapshot.swift in Sources */,
+				F5DD149582ABF2524B7ACEFD /* ScheduledClass.swift in Sources */,
+				C73F2E9A0D6B4C18A5913F20 /* TimetableLayoutCalculator.swift in Sources */,
+				D8F409FFFB1B7C056E8FF354 /* TimetableSnapshotStore.swift in Sources */,
+				9B3C21DFE2DEE6685CDAA615 /* ColorHelper.swift in Sources */,
+				996240240EFB2A66FB621C11 /* DateTimeHelper.swift in Sources */,
+				E9BC09D90A2502E6CAEBC280 /* RootView.swift in Sources */,
+				B9BFC82F8A248BF23465EC9B /* WeeklyTimetableView.swift in Sources */,
+				2B8C9C2965D95C77E362C1B1 /* ScheduleDraft.swift in Sources */,
+				496FDAF29C7E9A7CF44C27ED /* ScheduleRowEditor.swift in Sources */,
+				BFE0418F3447BA52D79398F5 /* CourseEditorView.swift in Sources */,
+				F7B10ABCCFC85B1486778D97 /* CourseListView.swift in Sources */,
+				AE49CB229FD6D249E607A295 /* CourseCard.swift in Sources */,
+				737F8DEC2EF7F543176061C8 /* TimeLabel.swift in Sources */,
+				CD775E3C6117AC5993EE655E /* EmptyStateView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86ECC82404AC7ADBF8317F45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E9BFF149D94C7C29A29F73D /* ClassboardWidgetExtension */;
+			targetProxy = B08FC46ECE5A991DCA2E8F50 /* PBXContainerItemProxy */;
+		};
+		B57660E4BEB73D5292856B6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 698EE99B03441E1860942179 /* Classboard */;
+			targetProxy = F9B1326DFC287D15EB97FEF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		23FB2CAEB38545C3793097DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_ENTITLEMENTS = Classboard/Classboard.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3T3FAULYM;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Classboard/App/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heo.classboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3CF6A4F2E05B3AAE7E2CBFEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_ENTITLEMENTS = Classboard/Classboard.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3T3FAULYM;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Classboard/App/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heo.classboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4EB605AD2E4EE7316ACCD6DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = ClassboardWidget/ClassboardWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3T3FAULYM;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ClassboardWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heo.classboard.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		877A6BA951A2EA0025A2ABE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		959134B361DD7E21ADEA3164 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B4343C19535B18410503AED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ClassboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heo.classboard.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Classboard.app/Contents/MacOS/Classboard";
+			};
+			name = Release;
+		};
+		E2657B9FA91DD4A55652006F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ClassboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heo.classboard.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Classboard.app/Contents/MacOS/Classboard";
+			};
+			name = Debug;
+		};
+		F4B7E5BA8E58CF01A465BB80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = ClassboardWidget/ClassboardWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3T3FAULYM;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ClassboardWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heo.classboard.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12D04D787E90C9B967248BFD /* Build configuration list for PBXProject "Classboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				877A6BA951A2EA0025A2ABE8 /* Debug */,
+				959134B361DD7E21ADEA3164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F8B995C0985FBB9D2A49B8F /* Build configuration list for PBXNativeTarget "Classboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF6A4F2E05B3AAE7E2CBFEE /* Debug */,
+				23FB2CAEB38545C3793097DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A19750D6EF30D6D0F172EF3E /* Build configuration list for PBXNativeTarget "ClassboardWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B7E5BA8E58CF01A465BB80 /* Debug */,
+				4EB605AD2E4EE7316ACCD6DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C93868262602C38CCE5570C3 /* Build configuration list for PBXNativeTarget "ClassboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2657B9FA91DD4A55652006F /* Debug */,
+				B4343C19535B18410503AED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C981970453DA16AE502E919F /* Project object */;
+}
